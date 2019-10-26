@@ -17,10 +17,6 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    },{
       title: 'David',
       url: '/david',
       icon: 'list'
@@ -29,6 +25,11 @@ export class AppComponent {
       title: 'Einstellungen',
       url: '/nikolai-page',
       icon: 'settings'
+    },
+    {
+      title: 'QUIZ',
+      url: '/quiz-page',
+      icon: 'list'
     },
     {
       title: 'Profil',
