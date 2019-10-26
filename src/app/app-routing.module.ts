@@ -17,7 +17,8 @@ const routes: Routes = [
   { path: 'lorenz-page', loadChildren: './lorenz-page/lorenz-page.module#LorenzPagePageModule' },
   { path: 'arthur', loadChildren: './arthur-page/arthur-page.module#ArthurPagePageModule' },
   { path: 'jakob', loadChildren: './jakob-page/jakob-page.module#JakobPagePageModule' },
-  { path: 'quiz-page', loadChildren: './quiz-page/quiz-page.module#QUIZPagePageModule' }
+  { path: 'quiz-page', loadChildren: './quiz-page/quiz-page.module#QUIZPagePageModule' },
+  { path: 'fragen', loadChildren: './fragen/fragen.module#FragenPageModule' }
 ];
 
 @NgModule({
