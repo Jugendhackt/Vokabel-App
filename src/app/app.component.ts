@@ -36,8 +36,18 @@ export class AppComponent {
       icon: 'list'
     },
     {
+    title: 'Lorenz',
+    url: '/lorenz-page',
+    icon: 'Lorenz'
+    },
+    {
       title: 'jakob-page',
       url: '/jakob',
+      icon: 'list'
+    },
+    {
+      title: 'Arthur',
+      url: '/arthur',
       icon: 'list'
     }
   ];
