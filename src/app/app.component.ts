@@ -17,11 +17,6 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'David',
-      url: '/david',
-      icon: 'list'
-    },
-    {
       title: 'Einstellungen',
       url: '/nikolai-page',
       icon: 'settings'
