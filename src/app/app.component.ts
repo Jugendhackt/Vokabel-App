@@ -29,6 +29,11 @@ export class AppComponent {
       title: 'nikolai',
       url: '/nikolai-page',
       icon: 'create'
+    },
+    {
+      title: 'Profil',
+      url: '/kaspar',
+      icon: 'list'
     }
   ];
 
