@@ -7,7 +7,7 @@ export class VocabService {
 
   name = "";
   alter;
-  fragen = ["Testfrage"];
+  fragen = ["Hallo das ist eine Testfrage"];
   antworten = [];
   darkMode = false;
   
