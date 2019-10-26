@@ -44,6 +44,11 @@ export class AppComponent {
       title: 'jakob-page',
       url: '/jakob',
       icon: 'list'
+    },
+    {
+      title: 'Arthur',
+      url: '/arthur',
+      icon: 'list'
     }
   ];
 

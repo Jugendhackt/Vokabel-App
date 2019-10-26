@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Arthurs Seite</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <app-arthur></app-arthur>
+
+    <ion-button>{{ zahl }}</ion-button>
+</ion-content>
+
+
+<!-- No -->
+<ion-button (click)="neinGeklickt()" color="danger">falsch</ion-button>
+
+<!-- Colors -->
+
+<ion-button (click)="jaGeklickt()" color="success">richtig</ion-button>
+
+
