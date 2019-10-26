@@ -17,7 +17,8 @@ const routes: Routes = [
   },
   { path: 'david', loadChildren: './david-page/david-page.module#DavidPagePageModule' },
   { path: 'kaspar', loadChildren: './kaspar-page/kaspar-page.module#KasparPagePageModule' },
-  { path: 'nikolai-page', loadChildren: './nikolai-page/nikolai-page.module#NikolaiPagePageModule' }
+  { path: 'nikolai-page', loadChildren: './nikolai-page/nikolai-page.module#NikolaiPagePageModule' },
+  { path: 'jakob', loadChildren: './jakob-page/jakob-page.module#JakobPagePageModule' }
 ];
 
 @NgModule({
