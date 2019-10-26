@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nikolai.component.scss'],
 })
 export class NikolaiComponent implements OnInit {
-  wert = 3;
+
 
   constructor() { }
 
@@ -14,7 +14,6 @@ export class NikolaiComponent implements OnInit {
 
   geklickt(){
     console.log("klick");
-    this.wert++;
   }
 
 

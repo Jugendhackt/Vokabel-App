@@ -26,9 +26,9 @@ export class AppComponent {
       icon: 'list'
     },
     {
-      title: 'Nikolai',
+      title: 'Einstellungen',
       url: '/nikolai-page',
-      icon: 'list'
+      icon: 'settings'
     },
     {
       title: 'Profil',

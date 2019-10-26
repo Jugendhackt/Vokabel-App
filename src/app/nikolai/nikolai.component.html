@@ -1,15 +1,11 @@
-<ion-card class="welcome-card">
-  <img src="https://cdn.pixabay.com/photo/2014/08/11/08/19/learn-415341_960_720.jpg
-  " alt="" />
-  <ion-card-header>
-    <ion-card-subtitle>Lern-App</ion-card-subtitle>
-    <ion-card-title>willkommen</ion-card-title>
-  </ion-card-header>
-  <ion-card-content>
-    <p>Klicke auf den unteren Knopf um zu starten!</p>
-  </ion-card-content>
-</ion-card>
-
-<ion-button expand="block" (click)="geklickt()">Los<ion-icon name="arrow-forward" size="small"></ion-icon></ion-button>
-
-<ion-button>{{ wert }}</ion-button>
+<ion-list>
+<ion-item>
+  <ion-label>Dark Mode (Kommt Bald)</ion-label>
+<ion-toggle [(ngModel)]="DarkMode"></ion-toggle>
+</ion-item>
+<ion-item>
+    <ion-label>Ton (Kommt Bald)</ion-label>
+  <ion-toggle [(ngModel)]="Ton"></ion-toggle>
+  </ion-item>
+  <ion-button expand="block" color="danger">Hilfe</ion-button>
+</ion-list>
