@@ -32,7 +32,7 @@ export class AppComponent {
       icon: 'contact'
     },
     {
-      title: 'jakob-page',
+      title: 'Fächer wählen',
       url: '/jakob',
       icon: 'list'
     },

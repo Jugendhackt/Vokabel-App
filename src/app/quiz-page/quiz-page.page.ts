@@ -15,7 +15,7 @@ export class QUIZPagePage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.meinText = this.vocabService.fragen[0];
+    this.meinText = this.vocabService.fragen[0].text;
   }
 
 }

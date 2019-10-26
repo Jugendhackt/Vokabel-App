@@ -18,7 +18,8 @@ const routes: Routes = [
   { path: 'arthur', loadChildren: './arthur-page/arthur-page.module#ArthurPagePageModule' },
   { path: 'jakob', loadChildren: './jakob-page/jakob-page.module#JakobPagePageModule' },
   { path: 'quiz-page', loadChildren: './quiz-page/quiz-page.module#QUIZPagePageModule' },
-  { path: 'fragen', loadChildren: './fragen/fragen.module#FragenPageModule' }
+  { path: 'fragen', loadChildren: './fragen/fragen.module#FragenPageModule' },
+  { path: 'frage', loadChildren: './frage/frage.module#FragePageModule' },
 ];
 
 @NgModule({

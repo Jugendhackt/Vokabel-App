@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jakob-page.page.scss'],
 })
 export class JakobPagePage implements OnInit {
+  inputHidden = true;
 
   constructor() { }
 
@@ -13,5 +14,6 @@ export class JakobPagePage implements OnInit {
   }
 geklickt() {
   console.log ("klick")
+  this.inputHidden = false;
 }
 }
