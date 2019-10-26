@@ -37,7 +37,7 @@ export class AppComponent {
       icon: 'list'
     },
     {
-      title: 'Arthur',
+      title: 'Freunde',
       url: '/arthur',
       icon: 'list'
     }
