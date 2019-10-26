@@ -17,11 +17,6 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'EINSTELLUNGEN',
-      url: '/nikolai-page',
-      icon: 'settings'
-    },
-    {
       title: 'QUIZ',
       url: '/quiz-page',
       icon: 'help-circle'
@@ -30,11 +25,6 @@ export class AppComponent {
       title: 'FRAGEN',
       url: '/fragen',
       icon: 'clipboard'
-    },
-    {
-      title: 'EINSTELLUNGEN',
-      url: '/nikolai-page',
-      icon: 'settings'
     },
     {
       title: 'PROFIL',
@@ -50,7 +40,12 @@ export class AppComponent {
       title: 'Freunde',
       url: '/arthur',
       icon: 'list'
-    }
+    },
+    {
+      title: 'EINSTELLUNGEN',
+      url: '/nikolai-page',
+      icon: 'settings'
+    },
   ];
 
   constructor(
