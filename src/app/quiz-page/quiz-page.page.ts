@@ -41,6 +41,11 @@ export class QUIZPagePage implements OnInit {
     this.insgesamt++;
   }
 
+  resetGeklickt () {
+    this.insgesamt = 0;
+    this.richtig = 0;
+  }
+
   neueFrage()  {
     const index = this.getRandomInt(0,this.vocabService.fragen.length)
     console.log(this.vocabService.fragen)
