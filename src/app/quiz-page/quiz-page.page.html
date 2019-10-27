@@ -10,6 +10,7 @@
 </ion-header>
 
 <ion-content>
+  <div *ngIf = "frage">
 
   <div id="score">
     <p>SCORE:{{ richtig }}/{{ insgesamt }}</p>
@@ -30,3 +31,14 @@
   <ion-button id="reset" color="medium" (click)="resetGeklickt()">NEUSTART</ion-button>
 
   </div>
+
+</div>
+
+  <div *ngIf = "!frage">
+
+    <p id="textNichtDa">Um zu spielen erstelle neue Fragen im Menüpunkt "Fragen erstellen"</p>
+
+    <ion-button id="linkFragen" color="warning" [routerLink]="['/frage']">FRAGE ERSTELLEN</ion-button>
+
+  </div>
+</ion-content>

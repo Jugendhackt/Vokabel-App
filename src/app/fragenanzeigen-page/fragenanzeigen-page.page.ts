@@ -16,4 +16,11 @@ export class FragenanzeigenPagePage implements OnInit {
     this.fragen=this.vocabService.fragen
   }
 
+  deleteFrage(frageText) {
+    console.log(frageText)
+    this.vocabService.fragen = this.vocabService.fragen.filter((frage) => {
+      return frageText !== frage.text;
+    });
+    this.fragen=this.vocabService.fragen
+  }
 }
