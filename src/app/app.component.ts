@@ -37,6 +37,11 @@ export class AppComponent {
       icon: 'clipboard'
     },
     {
+      title: 'FRAGEN ANZEIGEN',
+      url: '/fragenanzeigen-page',
+      icon: 'clipboard'
+    },
+    {
       title: 'FREUNDE',
       url: '/arthur',
       icon: 'contacts'

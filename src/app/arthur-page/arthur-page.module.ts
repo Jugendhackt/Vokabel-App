@@ -25,3 +25,4 @@ const routes: Routes = [
   declarations: [ArthurPagePage,ArthurComponent]
 })
 export class ArthurPagePageModule {}
+
