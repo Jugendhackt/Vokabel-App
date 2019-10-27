@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VocabService } from '../vocab.service';
 
 @Component({
   selector: 'app-arthur-page',
@@ -8,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class ArthurPagePage implements OnInit {
   zahl = 0;
 
-  constructor() { }
+  freunde;
+
+  constructor(private vocabService: VocabService) { }
 
   ngOnInit() {
+    console.log(this.vocabService.freunde)
+    this.freunde=this.vocabService.freunde;
   }
   
   neinGeklickt() {
