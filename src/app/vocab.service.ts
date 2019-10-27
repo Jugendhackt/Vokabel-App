@@ -11,6 +11,7 @@ export class VocabService {
   fragen: Frage[] = [{text: "Hallo das ist eine Testfrage", antwort: "test"}];
   antworten = [];
   darkMode = false;
+  freunde = ["Emma","Marie","Vito","Paul","Felix","Elsa","Mira","Oskar","Vivien","Sebastian","Tom",];
   
   constructor() { }
 }
