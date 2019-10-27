@@ -15,12 +15,26 @@
 
 <ion-item class="Name">
   <ion-label position="floating">Dein Name</ion-label>
-  <ion-input></ion-input>
+  <ion-input [(ngModel)]="name"></ion-input>
 </ion-item>
 
 <ion-item>
-  <ion-label position="floating">Deine Frage</ion-label>
-  <ion-input></ion-input>
+  <ion-label position="floating" type="number" >Dein Alter</ion-label>
+  <ion-input [(ngModel)]="alter"></ion-input>
 </ion-item>
 
-</ion-content>
+<ion-item>
+  <ion-label position="floating">Region</ion-label>
+  <ion-input [(ngModel)]="region"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Klassenstufe</ion-label>
+  <ion-input [(ngModel)]="klassenStufe"></ion-input>
+</ion-item>
+
+<ion-button (click)="speichern()">Speichern</ion-button>
+
+<div id="freunde">
+<ion-button id="freunde" expand="block" color="medium" routerLink="/arthur">Freunde</ion-button>
+</div>
