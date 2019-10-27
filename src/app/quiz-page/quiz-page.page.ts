@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quiz-page.page.scss'],
 })
 export class QUIZPagePage implements OnInit {
-  meinText: string;
-
   richtig = 0;
 
   insgesamt = 0;
+
+  antwortSichtbar = false;
+
+  frage;
 
   constructor(
     private vocabService: VocabService
@@ -25,7 +27,7 @@ export class QUIZPagePage implements OnInit {
     console.log(index)
     console.log(this.vocabService.fragen[index])
 
-    this.meinText = this.vocabService.fragen[index].text;
+    this.frage = this.vocabService.fragen[index];
   
   }
   jaGeklickt() {
@@ -46,12 +48,16 @@ export class QUIZPagePage implements OnInit {
     this.richtig = 0;
   }
 
+  antwortAnzeigen () {
+    this.antwortSichtbar = !this.antwortSichtbar;
+  }
+
   neueFrage()  {
     const index = this.getRandomInt(0,this.vocabService.fragen.length)
     console.log(this.vocabService.fragen)
     console.log(index)
     console.log(this.vocabService.fragen[index])
-    this.meinText = this.vocabService.fragen[index].text;
+    this.frage = this.vocabService.fragen[index];
   }
 
   getRandomInt(min, max) {
