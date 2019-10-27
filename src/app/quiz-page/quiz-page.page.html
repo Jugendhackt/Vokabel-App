@@ -17,8 +17,8 @@
   </div>
 
   <div id="fragen" (click)="antwortAnzeigen()">
-      <p [hidden]="antwortSichtbar">{{ frage.text }}</p>
-    	<p [hidden]="!antwortSichtbar">{{ frage.antwort }}</p>
+      <p [hidden]="antwortSichtbar">{{ frage.text | uppercase }}</p>
+    	<p [hidden]="!antwortSichtbar">{{ frage.antwort | uppercase }}</p>
   </div>
 
   <p id="antwortsehen">AUF DIE FRAGE DRÜCKEN UM ANTWORT ZU SEHEN</p>
