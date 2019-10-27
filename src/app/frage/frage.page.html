@@ -1,7 +1,7 @@
 <ion-header>
     <ion-toolbar>
 
-        <ion-title>KARTEN ERSTELLEN</ion-title>
+        <ion-title>Fragen erstellen</ion-title>
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
@@ -9,11 +9,20 @@
 </ion-header>
                  
 <ion-content>
-  <ion-input type="text" placeholder="Frage" [(ngModel)]="frageText"></ion-input>
-  <ion-input type="text" placeholder="Antwort" [(ngModel)]="frageAntwort"></ion-input>
+  <!--<ion-input position="floating" type="text" [(ngModel)]="frageText"></ion-input>
+  <ion-input position="floating" type="text" [(ngModel)]="frageAntwort"></ion-input>
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
         <ion-fab-button (click)="neueFrage()">
           <ion-icon name="add"></ion-icon>
         </ion-fab-button>
-      </ion-fab>
+      </ion-fab> -->
+      <ion-item><div id="textFrage">Gebe hier deine Frage ein,die Du später abgefragt werden möchtest</div>
+          <ion-label position="floating">Deine Frage</ion-label>
+           <ion-input position="floating" type="text" [(ngModel)]="frageText"></ion-input> 
+           </ion-item>
+        <ion-item>
+            <ion-label position="floating">Deine Antwort</ion-label>
+            <ion-input position="floating" type="text" [(ngModel)]="frageAntwort"></ion-input>
+          </ion-item>
+          <ion-button id="hinzufuegen" expand="block" color="success" (click)="neueFrage()">Hinzufügen</ion-button>
 </ion-content>
