@@ -7,10 +7,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-searchbar color="light" cancleButtonicon="md-arrow-back" animated ></ion-searchbar>
+<ion-searchbar color="light" cancleButtonicon="md-arrow-back" animated [(ngModel)]="suche" (keyup)="suchen($event)"></ion-searchbar>
+
 <ion-content>
-  
-    <ion-list>
+     <ion-list> 
         <ion-item *ngFor="let freund of freunde">
             <ion-avatar class="avatar">
               <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
@@ -30,6 +30,4 @@
           <ion-icon name="add"></ion-icon>
         </ion-fab-button>
       </ion-fab>
-<ion-content>
-
 </ion-content>

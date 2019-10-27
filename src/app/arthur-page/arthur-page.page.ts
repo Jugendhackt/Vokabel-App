@@ -27,6 +27,16 @@ export class ArthurPagePage implements OnInit {
     console.log("ja")
     this.zahl++;
   }
+
+  suchen(event){
+    console.log("suche", event);
+    console.log(event.target.value);
+    this.freunde = this.vocabService.freunde.filter((freund) => {
+      const freundKlein = freund.toLowerCase();
+      const sucheKlein = event.target.value.toLowerCase();
+      return freundKlein.includes(sucheKlein);
+    });
+  }
 }
  
     
