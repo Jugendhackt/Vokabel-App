@@ -19,7 +19,8 @@ const routes: Routes = [
   { path: 'jakob', loadChildren: './jakob-page/jakob-page.module#JakobPagePageModule' },
   { path: 'quiz-page', loadChildren: './quiz-page/quiz-page.module#QUIZPagePageModule' },
   { path: 'fragen', loadChildren: './fragen/fragen.module#FragenPageModule' },
-  { path: 'frage', loadChildren: './frage/frage.module#FragePageModule' },  { path: 'fragenanzeigen-page', loadChildren: './fragenanzeigen-page/fragenanzeigen-page.module#FragenanzeigenPagePageModule' },
+  { path: 'frage', loadChildren: './frage/frage.module#FragePageModule' },
+  { path: 'fragenanzeigen-page', loadChildren: './fragenanzeigen-page/fragenanzeigen-page.module#FragenanzeigenPagePageModule' },
 
 ];
 
