@@ -12,7 +12,7 @@
 <ion-content>
 
   <div id="score">
-    <p>SCORE:</p>
+    <p>SCORE:{{ richtig }}/{{ insgesamt }}</p>
  
   </div>
 
@@ -25,7 +25,7 @@
 
   <div id="buttons">
 
-  <ion-button id="wrong" color="danger">Falsch</ion-button>
-  <ion-button id="right" color="success">Richtig</ion-button>
+  <ion-button id="wrong" color="danger" (click)="neinGeklickt()">Falsch</ion-button>
+  <ion-button id="right" color="success" (click)="jaGeklickt()">Richtig</ion-button>
 
   </div>
