@@ -39,7 +39,7 @@ export class AppComponent {
     {
       title: 'FRAGEN ANZEIGEN',
       url: '/fragenanzeigen-page',
-      icon: 'clipboard'
+      icon: 'archive'
     },
     {
       title: 'FREUNDE',
