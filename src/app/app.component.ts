@@ -19,27 +19,22 @@ export class AppComponent {
     {
       title: 'QUIZ',
       url: '/quiz-page',
-      icon: 'help-circle'
+      icon: 'logo-game-controller-b'
     },
     {
-      title: 'FRAGEN',
-      url: '/fragen',
-      icon: 'clipboard'
+      title: 'FRAGEN ERSTELLEN',
+      url: '/jakob',
+      icon: 'create'
+    },
+    {
+      title: 'FRAGEN ANZEIGEN',
+      url: '/fragenanzeigen-page',
+      icon: 'folder-open'
     },
     {
       title: 'PROFIL',
       url: '/kaspar',
       icon: 'contact'
-    },
-    {
-      title: 'FRAGEN ERSTELLEN',
-      url: '/jakob',
-      icon: 'clipboard'
-    },
-    {
-      title: 'FRAGEN ANZEIGEN',
-      url: '/fragenanzeigen-page',
-      icon: 'archive'
     },
     {
       title: 'FREUNDE',
