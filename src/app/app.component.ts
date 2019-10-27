@@ -37,9 +37,9 @@ export class AppComponent {
       icon: 'list'
     },
     {
-      title: 'Freunde',
+      title: 'FREUNDE',
       url: '/arthur',
-      icon: 'list'
+      icon: 'contacts'
     },
     {
       title: 'EINSTELLUNGEN',
