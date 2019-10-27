@@ -32,9 +32,9 @@ export class AppComponent {
       icon: 'contact'
     },
     {
-      title: 'Fächer wählen',
+      title: 'FRAGEN ERSTELLEN',
       url: '/jakob',
-      icon: 'list'
+      icon: 'clipboard'
     },
     {
       title: 'FREUNDE',
