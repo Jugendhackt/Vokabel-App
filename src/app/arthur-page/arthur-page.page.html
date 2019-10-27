@@ -7,113 +7,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-searchbar color="light" cancleButtonicon="md-arrow-back" animated></ion-searchbar>
-
-
+<ion-searchbar color="light" cancleButtonicon="md-arrow-back" animated ></ion-searchbar>
 <ion-content>
   
     <ion-list>
-        <ion-item>
+        <ion-item *ngFor="let freund of freunde">
             <ion-avatar class="avatar">
               <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-            </ion-avatar> <ion-label>Christina</ion-label>
-            <ion-item-sliding>
-                <ion-item>toggle</ion-item>
-                <ion-item-options side="end">
-                  <ion-item-option (click)="unread(item)">Unread</ion-item-option>
-                </ion-item-options>
-              </ion-item-sliding>
+            </ion-avatar> <ion-label>{{freund}}</ion-label>
           </ion-item>
-          <ion-item>
-              <ion-avatar class="avatar">
-                  <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                </ion-avatar> <ion-label>Emma</ion-label>
-          </ion-item>
-          <ion-item>
-              <ion-avatar class="avatar">
-                  <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                </ion-avatar> <ion-label>Marie</ion-label>
-          </ion-item>
-          <ion-item>
-              <ion-avatar class="avatar">
-                  <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                </ion-avatar>  <ion-label>Vito</ion-label>
-          </ion-item>
-          <ion-item>
-              <ion-avatar class="avatar">
-                  <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                </ion-avatar>  <ion-label>Paul</ion-label>
-          </ion-item>
-          <ion-item>
-              <ion-avatar class="avatar">
-                  <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                </ion-avatar>  <ion-label>Felix</ion-label>
-            </ion-item>
-            <ion-item>
-                <ion-avatar class="avatar">
-                    <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                  </ion-avatar>  <ion-label>Elsa</ion-label>
-            </ion-item>
-            <ion-item>
-                <ion-avatar class="avatar">
-                    <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                  </ion-avatar> <ion-label>Mira</ion-label>
-            </ion-item>
-            <ion-item>
-                <ion-avatar class="avatar">
-                    <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                  </ion-avatar> <ion-label>Oskar</ion-label>
-            </ion-item>
-            <ion-item>
-                <ion-avatar class="avatar">
-                    <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                  </ion-avatar>  <ion-label>Vivien</ion-label>
-            </ion-item>
-            <ion-item>
-                <ion-avatar class="avatar">
-                    <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                  </ion-avatar> <ion-label>Sebastian</ion-label>
-            </ion-item>
-            <ion-item>
-                <ion-avatar class="avatar">
-                    <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                  </ion-avatar> <ion-label>Tom</ion-label>
-            </ion-item>
-            <ion-item>
-                <ion-avatar class="avatar">
-                    <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                  </ion-avatar>  <ion-label>Ferdinand</ion-label>
-            </ion-item>
-            <ion-item>
-                <ion-avatar class="avatar">
-                    <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                  </ion-avatar>  <ion-label>Markus</ion-label>
-            </ion-item>
-            <ion-item>
-                <ion-avatar class="avatar">
-                    <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                  </ion-avatar>  <ion-label>Georg</ion-label>
-              </ion-item>
-              <ion-item>
-                  <ion-avatar class="avatar">
-                      <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                    </ion-avatar>  <ion-label>Hans</ion-label>
-              </ion-item>
-              <ion-item>
-                  <ion-avatar class="avatar">
-                      <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                    </ion-avatar> <ion-label>Gustav</ion-label>
-              </ion-item>
-              <ion-item>
-                  <ion-avatar class="avatar">
-                      <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                    </ion-avatar> <ion-label>Marelise</ion-label>
-              </ion-item>
-              <ion-item>
-                  <ion-avatar class="avatar">
-                      <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-                    </ion-avatar>  <ion-label>Susi</ion-label>
-              </ion-item>
     </ion-list>
   
     <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
