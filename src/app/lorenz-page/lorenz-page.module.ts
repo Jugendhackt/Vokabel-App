@@ -10,8 +10,8 @@ import { LorenzPagePage } from './lorenz-page.page';
 const routes: Routes = [
   {
     path: '',
-    component: LorenzPagePage
-  }
+    component: LorenzPagePage,
+  },
 ];
 
 @NgModule({
@@ -19,8 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [LorenzPagePage]
+  declarations: [LorenzPagePage],
 })
 export class LorenzPagePageModule {}

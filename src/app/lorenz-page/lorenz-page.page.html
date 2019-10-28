@@ -1,19 +1,21 @@
 <ion-toolbar>
-  <ion-searchbar aria-placeholder="search" 
-                [(ngModel)]="queryText"
-                (ionInput)="updateText()">
+  <ion-searchbar
+    aria-placeholder="search"
+    [(ngModel)]="queryText"
+    (ionInput)="updateText()"
+  >
   </ion-searchbar>
 </ion-toolbar>
-<ion-item >
-
+<ion-item>
   <ion-label>Name</ion-label>
   <ion-label>Description</ion-label>
   <ion-label>Price</ion-label>
 </ion-item>
 
-<ion-item *ngFor="let item of food" >
-
- <ion-label style="width: 40px; height: 80px;" >{{item.name}} </ion-label>
-  <ion-label style="width: 40px; height: 80px;" >{{item.description}} </ion-label>
-  <ion-label style="width: 40px; height: 80px;" >{{item.price}} </ion-label> 
-</ion-item> 
+<ion-item *ngFor="let item of food">
+  <ion-label style="width: 40px; height: 80px;">{{item.name}}</ion-label>
+  <ion-label style="width: 40px; height: 80px;">
+    {{item.description}}
+  </ion-label>
+  <ion-label style="width: 40px; height: 80px;">{{item.price}}</ion-label>
+</ion-item>

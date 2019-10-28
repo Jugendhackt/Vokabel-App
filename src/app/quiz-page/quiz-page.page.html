@@ -10,35 +10,39 @@
 </ion-header>
 
 <ion-content>
-  <div *ngIf = "frage">
+  <div *ngIf="frage">
+    <div id="score">
+      <p>SCORE:{{ richtig }}/{{ insgesamt }}</p>
+    </div>
 
-  <div id="score">
-    <p>SCORE:{{ richtig }}/{{ insgesamt }}</p>
- 
-  </div>
-
-  <div id="fragen" (click)="antwortAnzeigen()">
+    <div id="fragen" (click)="antwortAnzeigen()">
       <p [hidden]="antwortSichtbar">{{ frage.text | uppercase }}</p>
-    	<p [hidden]="!antwortSichtbar">{{ frage.antwort | uppercase }}</p>
+      <p [hidden]="!antwortSichtbar">{{ frage.antwort | uppercase }}</p>
+    </div>
+
+    <p id="antwortsehen">AUF DIE FRAGE DRÜCKEN UM ANTWORT ZU SEHEN</p>
+
+    <div id="buttons">
+      <ion-button id="wrong" color="danger" (click)="neinGeklickt()">
+        Falsch
+      </ion-button>
+      <ion-button id="right" color="success" (click)="jaGeklickt()">
+        Richtig
+      </ion-button>
+
+      <ion-button id="reset" color="medium" (click)="resetGeklickt()">
+        NEUSTART
+      </ion-button>
+    </div>
   </div>
 
-  <p id="antwortsehen">AUF DIE FRAGE DRÜCKEN UM ANTWORT ZU SEHEN</p>
+  <div *ngIf="!frage">
+    <p id="textNichtDa">
+      Um zu spielen erstelle neue Fragen im Menüpunkt "Fragen erstellen"
+    </p>
 
-  <div id="buttons">
-
-  <ion-button id="wrong" color="danger" (click)="neinGeklickt()">Falsch</ion-button>
-  <ion-button id="right" color="success" (click)="jaGeklickt()">Richtig</ion-button>
-  <ion-button id="reset" color="medium" (click)="resetGeklickt()">NEUSTART</ion-button>
-
-  </div>
-
-</div>
-
-  <div *ngIf = "!frage">
-
-    <p id="textNichtDa">Um zu spielen erstelle neue Fragen im Menüpunkt "Fragen erstellen"</p>
-
-    <ion-button id="linkFragen" color="warning" [routerLink]="['/frage']">FRAGE ERSTELLEN</ion-button>
-
+    <ion-button id="linkFragen" color="warning" [routerLink]="['/frage']">
+      FRAGE ERSTELLEN
+    </ion-button>
   </div>
 </ion-content>

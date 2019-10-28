@@ -9,18 +9,16 @@ import { VocabService } from '../vocab.service';
 export class NikolaiComponent implements OnInit {
   darkMode: boolean;
 
-  constructor(
-    private vocabService: VocabService
-  ) { }
+  constructor(private vocabService: VocabService) {}
 
   ngOnInit() {
     this.darkMode = this.vocabService.darkMode;
-    console.log("init");
+    console.log('init');
     console.log(this.darkMode);
   }
 
-  geklickt(){
-    console.log("klick");
+  geklickt() {
+    console.log('klick');
     this.vocabService.darkMode = !this.vocabService.darkMode;
     console.log(this.vocabService.darkMode);
     document.body.classList.toggle('dark');

@@ -11,27 +11,27 @@ export class ArthurPagePage implements OnInit {
 
   freunde;
 
-  constructor(private vocabService: VocabService) { }
+  constructor(private vocabService: VocabService) {}
 
   ngOnInit() {
-    console.log(this.vocabService.freunde)
-    this.freunde=this.vocabService.freunde;
+    console.log(this.vocabService.freunde);
+    this.freunde = this.vocabService.freunde;
   }
-  
+
   neinGeklickt() {
-    console.log("nein");
+    console.log('nein');
     this.zahl--;
   }
 
   jaGeklickt() {
-    console.log("ja")
+    console.log('ja');
     this.zahl++;
   }
 
-  suchen(event){
-    console.log("suche", event);
+  suchen(event) {
+    console.log('suche', event);
     console.log(event.target.value);
-    this.freunde = this.vocabService.freunde.filter((freund) => {
+    this.freunde = this.vocabService.freunde.filter(freund => {
       const freundKlein = freund.toLowerCase();
       const sucheKlein = event.target.value.toLowerCase();
       return freundKlein.includes(sucheKlein);

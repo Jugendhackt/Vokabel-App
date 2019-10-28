@@ -10,8 +10,8 @@ import { FragenanzeigenPagePage } from './fragenanzeigen-page.page';
 const routes: Routes = [
   {
     path: '',
-    component: FragenanzeigenPagePage
-  }
+    component: FragenanzeigenPagePage,
+  },
 ];
 
 @NgModule({
@@ -19,8 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [FragenanzeigenPagePage]
+  declarations: [FragenanzeigenPagePage],
 })
 export class FragenanzeigenPagePageModule {}

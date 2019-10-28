@@ -15,9 +15,7 @@ export class KasparPagePage implements OnInit {
 
   klassenStufe;
 
-  constructor(
-    private vocabService: VocabService
-  ) { }
+  constructor(private vocabService: VocabService) {}
 
   ngOnInit() {
     if (this.vocabService.profil) {
@@ -26,18 +24,17 @@ export class KasparPagePage implements OnInit {
       this.region = this.vocabService.profil.region;
       this.klassenStufe = this.vocabService.profil.klasseStufe;
     }
-    
   }
 
   speichern() {
-    console.log("speichern");
-    
+    console.log('speichern');
+
     this.vocabService.profil = {
       name: this.name,
       region: this.region,
       alter: this.alter,
-      klasseStufe: this.klassenStufe
-    }
+      klasseStufe: this.klassenStufe,
+    };
     console.log(this.vocabService.profil);
   }
 }

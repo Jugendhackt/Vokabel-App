@@ -1,48 +1,52 @@
 <ion-header>
   <ion-toolbar>
-      <ion-buttons slot="start">
-          <ion-menu-button></ion-menu-button>
-        </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>Fächer wählen</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-item>
-    <ion-button color="danger" slot="start" routerLink="/frage" [queryParams]="{fach: 'Englisch'}">
+    <ion-button
+      color="danger"
+      slot="start"
+      routerLink="/frage"
+      [queryParams]="{fach: 'Englisch'}"
+    >
       Start
     </ion-button>
     <ion-label>Englisch</ion-label>
   </ion-item>
   <ion-item>
-      <ion-button color="secondary" slot="start" routerLink="/frage">
-        Start
-      </ion-button>
-      <ion-label>Französisch</ion-label>
-    </ion-item>
-    <ion-item>
-        <ion-button color="primary" slot="start" routerLink="/frage">
-          Start
-        </ion-button>
-        <ion-label>Mathematik</ion-label>
-      </ion-item>
-      <ion-item>
-          <ion-button color="dark" slot="start" routerLink="/frage">
-            Start
-          </ion-button>
-          <ion-label>Deutsch</ion-label>
-        </ion-item>
-        <ion-item>
-            <ion-button color="success" slot="start" routerLink="/frage">
-              Start
-            </ion-button>
-            <ion-label>Geschichte</ion-label>
-          </ion-item>
-          <ion-item>
-              <ion-button color="light" slot="start" routerLink="/frage">
-                Start
-              </ion-button>
-              <ion-label>Geographie</ion-label>
-            </ion-item>
+    <ion-button color="secondary" slot="start" routerLink="/frage">
+      Start
+    </ion-button>
+    <ion-label>Französisch</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-button color="primary" slot="start" routerLink="/frage">
+      Start
+    </ion-button>
+    <ion-label>Mathematik</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-button color="dark" slot="start" routerLink="/frage">
+      Start
+    </ion-button>
+    <ion-label>Deutsch</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-button color="success" slot="start" routerLink="/frage">
+      Start
+    </ion-button>
+    <ion-label>Geschichte</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-button color="light" slot="start" routerLink="/frage">
+      Start
+    </ion-button>
+    <ion-label>Geographie</ion-label>
+  </ion-item>
 </ion-content>
-
