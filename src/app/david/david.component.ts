@@ -6,9 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./david.component.scss'],
 })
 export class DavidComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {}
-
 }

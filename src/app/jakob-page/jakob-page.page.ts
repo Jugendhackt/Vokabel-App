@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class JakobPagePage implements OnInit {
   inputHidden = true;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  geklickt() {
+    console.log('klick');
+    this.inputHidden = false;
   }
-geklickt() {
-  console.log ("klick")
-  this.inputHidden = false;
-}
 }

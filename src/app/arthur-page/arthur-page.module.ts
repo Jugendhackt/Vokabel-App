@@ -11,8 +11,8 @@ import { ArthurComponent } from '../arthur/arthur.component';
 const routes: Routes = [
   {
     path: '',
-    component: ArthurPagePage
-  }
+    component: ArthurPagePage,
+  },
 ];
 
 @NgModule({
@@ -20,9 +20,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [ArthurPagePage,ArthurComponent]
+  declarations: [ArthurPagePage, ArthurComponent],
 })
 export class ArthurPagePageModule {}
-

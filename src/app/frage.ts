@@ -1,4 +1,4 @@
 export interface Frage {
-    text: string;
-    antwort: string;
+  text: string;
+  antwort: string;
 }

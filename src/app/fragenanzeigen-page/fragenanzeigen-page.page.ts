@@ -7,20 +7,19 @@ import { VocabService } from '../vocab.service';
   styleUrls: ['./fragenanzeigen-page.page.scss'],
 })
 export class FragenanzeigenPagePage implements OnInit {
-
   fragen;
 
-  constructor(private vocabService: VocabService) { }
+  constructor(private vocabService: VocabService) {}
 
   ngOnInit() {
-    this.fragen=this.vocabService.fragen
+    this.fragen = this.vocabService.fragen;
   }
 
   deleteFrage(frageText) {
-    console.log(frageText)
-    this.vocabService.fragen = this.vocabService.fragen.filter((frage) => {
+    console.log(frageText);
+    this.vocabService.fragen = this.vocabService.fragen.filter(frage => {
       return frageText !== frage.text;
     });
-    this.fragen=this.vocabService.fragen
+    this.fragen = this.vocabService.fragen;
   }
 }

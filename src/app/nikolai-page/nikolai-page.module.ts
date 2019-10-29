@@ -11,8 +11,8 @@ import { NikolaiComponent } from '../nikolai/nikolai.component';
 const routes: Routes = [
   {
     path: '',
-    component: NikolaiPagePage
-  }
+    component: NikolaiPagePage,
+  },
 ];
 
 @NgModule({
@@ -20,8 +20,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [NikolaiPagePage,NikolaiComponent]
+  declarations: [NikolaiPagePage, NikolaiComponent],
 })
 export class NikolaiPagePageModule {}

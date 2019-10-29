@@ -8,16 +8,16 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./frage.page.scss'],
 })
 export class FragePage implements OnInit {
-  frageText = "";
+  frageText = '';
 
-  frageAntwort = "";
+  frageAntwort = '';
 
   fach;
 
   constructor(
     private vocabService: VocabService,
-    private route: ActivatedRoute,
-  ) { }
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit() {
     console.log(this.route.snapshot);
@@ -25,7 +25,7 @@ export class FragePage implements OnInit {
       this.fach = this.route.snapshot.data['fach'];
       console.log(this.fach);
     } else {
-      console.log("nichts");
+      console.log('nichts');
     }
   }
 
@@ -34,8 +34,8 @@ export class FragePage implements OnInit {
       text: this.frageText,
       antwort: this.frageAntwort,
     });
-    this.frageText = "";
-    this.frageAntwort = "";
+    this.frageText = '';
+    this.frageAntwort = '';
     console.log(this.vocabService.fragen);
   }
 }

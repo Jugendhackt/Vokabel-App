@@ -1,40 +1,56 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-          <ion-title>Profil</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Profil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
+  <ion-avatar class="avatar">
+    <img
+      src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png"
+    />
+  </ion-avatar>
 
-<ion-avatar class="avatar">
-  <img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
-</ion-avatar>
+  <ion-item class="Name">
+    <ion-label position="floating">Dein Name</ion-label>
+    <ion-input [(ngModel)]="name"></ion-input>
+  </ion-item>
 
-<ion-item class="Name">
-  <ion-label position="floating">Dein Name</ion-label>
-  <ion-input [(ngModel)]="name"></ion-input>
-</ion-item>
+  <ion-item>
+    <ion-label position="floating" type="number">Dein Alter</ion-label>
+    <ion-input [(ngModel)]="alter"></ion-input>
+  </ion-item>
 
-<ion-item>
-  <ion-label position="floating" type="number" >Dein Alter</ion-label>
-  <ion-input [(ngModel)]="alter"></ion-input>
-</ion-item>
+  <ion-item>
+    <ion-label position="floating">Region</ion-label>
+    <ion-input [(ngModel)]="region"></ion-input>
+  </ion-item>
 
-<ion-item>
-  <ion-label position="floating">Region</ion-label>
-  <ion-input [(ngModel)]="region"></ion-input>
-</ion-item>
+  <ion-item>
+    <ion-label position="floating">Klassenstufe</ion-label>
+    <ion-input [(ngModel)]="klassenStufe"></ion-input>
+  </ion-item>
 
-<ion-item>
-  <ion-label position="floating">Klassenstufe</ion-label>
-  <ion-input [(ngModel)]="klassenStufe"></ion-input>
-</ion-item>
+  <ion-button
+    id="speichern"
+    expand="block"
+    color="success"
+    (click)="speichern()"
+  >
+    Speichern
+  </ion-button>
 
-<ion-button id="speichern" expand="block" color="success" (click)="speichern()">Speichern</ion-button>
-
-<div id="freunde">
-<ion-button id="freunde" expand="block" color="warning" routerLink="/arthur">Freunde</ion-button>
-</div>
+  <div id="freunde">
+    <ion-button
+      id="freunde"
+      expand="block"
+      color="warning"
+      routerLink="/arthur"
+    >
+      Freunde
+    </ion-button>
+  </div>
+</ion-content>

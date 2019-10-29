@@ -15,10 +15,10 @@ import { DavidComponent } from '../david/david.component';
     RouterModule.forChild([
       {
         path: '',
-        component: ListPage
-      }
-    ])
+        component: ListPage,
+      },
+    ]),
   ],
-  declarations: [ListPage,DavidComponent]
+  declarations: [ListPage, DavidComponent],
 })
 export class ListPageModule {}
